@@ -1,0 +1,388 @@
+body {
+    background-color:rgba(207, 153, 139, 0.308);
+    margin: 0px;
+    min-width:none;
+    font-size: 19px;
+}
+
+nav {
+    position: fixed;
+    background-color: rgba(207, 153, 139, 0.767);
+    width: 100%;
+    /* Set the width to 100% */
+    z-index: 2;
+    font-family: 'Kalnia', serif;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    /* Remove default padding */
+}
+
+.icon {
+    font-family: 'Kalnia', serif;
+    
+    font-size: 40px;
+    color: black;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    /* Distribute menu items evenly */
+    align-items: center;
+    /* Center items vertically */
+    margin: 0;
+
+}
+
+.menu li {
+
+    text-align: center;
+    width: 100%;
+    
+}
+
+nav a {
+
+    line-height: 100px;
+    height: 100%;
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    cursor: pointer;
+    padding: 0 15px;
+    /* Add padding to menu items */
+    display: block;
+    font-weight: 500;
+
+}
+
+
+.menu li a:hover {
+    color: #3d0958;
+
+}
+
+.menu ul {
+    display: none;
+    position: absolute;
+    background-color: rgba(207, 153, 139, 0.767);
+    width: 100%;
+}
+
+.menu ul li {
+    width: 100%;
+    height: 85px;
+}
+
+
+.menu li:hover > ul {
+    display: block;
+
+}
+
+nav li:nth-child(2),
+nav li:nth-child(3),
+nav li:nth-child(4) {
+    position: relative;
+}
+
+nav li:nth-child(1) {
+    width: 300px;
+}
+
+nav li:nth-child(2) {
+    width: 330px;
+}
+
+nav li:nth-child(3) {
+    width: 300px;
+}
+
+nav li:nth-child(4) {
+    width: 260px;
+}
+
+nav :nth-child(5) {
+    width: 240px;
+}
+
+nav li:nth-child(2) ul,
+nav li:nth-child(3) ul,
+nav li:nth-child(4) ul {
+    position: absolute;
+    top: 100%;
+    left: 0%;
+}
+
+nav li:nth-child(2) ul li,
+nav li:nth-child(3) ul li,
+nav li:nth-child(4) ul li {
+    width: 100%;
+    border-bottom: 1px solid  rgba(207, 153, 139, 1);
+    border-top: 1px solid  rgba(207, 153, 139, 1);
+
+    
+}
+
+nav li:nth-child(1) {
+    width: 100px;
+}
+
+.mySlides {
+    width: 100%;
+}
+
+.kontener_slajdow {
+    position: relative;
+}
+
+
+section {
+    position: relative;
+    flex: 75%;
+    padding: 20px 100px 20px 80px;
+    margin: 3% 3% 3% 3%;
+    
+    background-color:  rgba(207, 153, 139, 0.356);
+    border-radius: 3px;
+    font-size: 19px;
+    text-align: justify;
+}
+
+.notka_o_muzeum p::first-letter {
+    color: #030303;
+    float: left;
+    font-family: 'Kalnia', serif;
+    font-size: 75px;
+    padding-right: 8px;
+    margin-top: -15px;
+    }
+
+.kontener_podstron{
+    text-decoration: none;
+    display: flex;
+    padding: 30px;
+}
+
+.notka_o_muzeum h3{
+font-family: 'Kalnia', serif; 
+}
+.historia {
+    flex: 30%;
+    text-decoration: none;
+    border: 2px solid black;
+    border-radius: 3px;
+    margin: 10px 20px;
+    background-color: rgb(238, 218, 218);
+    text-align: center;
+    overflow: hidden; /* Dodane, aby zdjęcie nie wychodziło poza kontener */
+    position: relative;
+    transition: transform 0.35s linear;
+}
+
+.zdjecie_historia {
+    width: 100%;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+    /* transition: transform 0.15s linear; Dodane, aby dostosować animację dla zdjęcia */
+}
+
+.historia:hover {
+    box-shadow: 10px 10px 7px rgba(0, 0, 0, .3);
+    transform: scale(1.05);
+}
+
+.historia:hover {
+    transform: scale(1.05); /* Dodane, aby zdjęcie również powiększało się po najechaniu */
+}
+
+.text_historia {
+    text-decoration: none;
+    color: #260b35;
+    bottom: 0px;
+    font-family: 'Kalnia', serif;
+    font-size: 25px;
+    font-weight: 600;
+}
+.edukacja {
+    flex: 30%;
+    text-decoration: none;
+    border: 2px solid black;
+    border-radius: 3px;
+    margin: 10px 0px;
+    background-color: rgb(238, 218, 218);
+    text-align: center;
+    overflow: hidden; /* Dodane, aby zdjęcie nie wychodziło poza kontener */
+    position: relative;
+    transition: transform 0.35s linear;
+}
+.zdjecie_edukacja{
+    width: 100%;
+    border-radius: 3px;
+}
+.text_edukacja{
+    text-decoration: none;
+    color: #260b35;
+    text-align: center;
+    padding: 10px;
+    font-family: 'Kalnia', serif;
+    font-size: 25px;
+    font-weight: 600;
+}
+.edukacja:hover {
+    box-shadow: 10px 10px 7px rgba(0, 0, 0, .3);
+    transform: scale(1.05);
+}
+
+.edukacja:hover {
+    transform: scale(1.05); /* Dodane, aby zdjęcie również powiększało się po najechaniu */
+}
+
+.nagroda {
+    
+    background-color: rgb(238, 218, 218);
+    flex:30%;
+    text-decoration: none;
+    border: 2px solid black;
+    border-radius: 3px;
+    /* padding: 5px; */
+    margin: 10px 20px;
+    padding-bottom: 10px;
+    text-align: center;
+    overflow: hidden; /* Dodane, aby zdjęcie nie wychodziło poza kontener */
+    position: relative;
+    transition: transform 0.35s linear;
+}
+.zdjecie_nagroda{
+    width: 100%;
+    border-radius: 3px;
+   }
+
+.text_nagroda{
+    text-decoration: none;
+    color: #260b35;
+    text-align: center;
+    padding: 10px;
+    font-family: 'Kalnia', serif;
+    font-size: 25px;
+    font-weight: 600;
+}
+.nagroda:hover {
+    box-shadow: 10px 10px 7px rgba(0, 0, 0, .3);
+    transform: scale(1.05);
+}
+
+.nagroda:hover {
+    transform: scale(1.05); /* Dodane, aby zdjęcie również powiększało się po najechaniu */
+}
+
+.edukacja a:hover{
+    color:#cc6760;
+}
+
+.historia a:hover{
+    color:#cc6760;}
+
+.nagroda a:hover{
+    color:#cc6760;}
+
+footer {
+    margin: 20px;
+    text-align: center;
+    background-color: rgba(207, 192, 168, 0.589);
+    padding: 30px 10px;
+    margin: -3px 0px;
+    color: grey;
+}
+
+#facebook {
+    text-decoration: none;
+}
+
+.Czytaj_wiecej {
+    padding: 5px 10px;
+    display: block;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    background: red;
+    transition: 0.4s;
+    /*
+    float: right;
+    margin-top: -20px;
+    margin-right: 20px;
+    text-decoration: none;
+*/
+}
+
+.Czytaj_wiecej:hover {
+    background: royalblue;
+    transition: 0.4s;
+}
+
+h1 {
+    font-family: 'Kalnia', serif;
+}
+
+.art2,
+.art3 {
+    margin-top: 5%;
+    font-family: 'Kalnia', serif;
+}
+
+
+@media screen and (max-width: 1156px) {
+    .menu li:not(:first-child) {
+        display: none;
+    }
+
+    .menu li:first-child {
+        display: inline-block;
+        margin-right: 0;
+    }
+}
+    @media screen and (max-width: 800px) {
+        .menu {
+            flex-direction: column;
+        }
+
+        /* .menu li {
+            margin: 10px 0;
+        }
+
+        .menu ul {
+            position: static;
+            display: none;
+        }
+
+        .menu li:hover ul {
+            display: none;
+        } */
+    }
+
+
+@media screen and (max-width: 800px)
+{
+
+.kontener_podstron{
+display: inline-block;
+
+}
+
+.edukacja{
+    margin: 30px 0px 30px 20px;
+    width: 88%;
+}
+
+ #kliknij{
+    display:none;
+}
+}
+
+
+

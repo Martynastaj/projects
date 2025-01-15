@@ -1,0 +1,275 @@
+
+body{
+    background-color: rgba(117, 166, 164, 0.4);
+    margin:0px ;
+    font-size: 19px;
+}
+
+nav {
+    position: absolute;
+    background-color: rgba(117, 166, 164, 0.7);
+    width: 100%; /* Set the width to 100% */
+    z-index: 2;
+    font-family: 'Kalnia', serif;
+}
+
+ul {
+    list-style: none;
+    padding: 0; /* Remove default padding */
+}
+
+.icon {
+    font-family: 'Kalnia', serif;
+    
+    font-size: 40px;
+    color: black;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around; /* Distribute menu items evenly */
+    align-items: center; /* Center items vertically */
+    margin: 0;
+   
+}
+
+.menu li {
+   
+    text-align: center;
+    width: 100%;
+   
+}
+
+nav a {
+    
+    line-height: 100px;
+    height: 100%;
+    font-size: 20px;
+    text-decoration:none;
+    text-transform: uppercase;
+    color: #fff ;
+    cursor: pointer;
+    padding: 0 15px; /* Add padding to menu items */
+    display: block;
+    font-weight:500;
+    
+}
+
+
+
+.menu li a:hover {
+    color: #32462a;
+    
+}
+
+.menu ul {
+    display: none;
+    position: absolute;
+    background-color: rgba(117, 166, 164, 0.7);
+      width: 100%;
+}
+
+.menu ul li {
+    width: 100%;
+}
+
+.menu li:hover > ul {
+    display: block;
+    
+}
+
+nav li:nth-child(2),
+nav li:nth-child(3),
+nav li:nth-child(4) {
+    position: relative;
+}
+nav li:nth-child(1){
+    width: 230px;
+}
+
+nav li:nth-child(2){
+    width: 360px;
+}
+nav li:nth-child(3){
+    width: 300px;
+}
+nav li:nth-child(4){
+    width: 260px;
+}
+nav :nth-child(5){
+    width: 240px;
+}
+nav li:nth-child(2) ul,
+nav li:nth-child(3) ul,
+nav li:nth-child(4) ul {
+    position: absolute;
+    /* top: 100%; */
+    left: 0%;
+}
+
+nav li:nth-child(2) ul li,
+nav li:nth-child(3) ul li,
+nav li:nth-child(4) ul li {
+    width: 99.9%;
+    border: 1px solid rgba(117, 166, 164, 1);
+}
+
+nav li:nth-child(1){
+    width:100px;
+}
+
+.mySlides{
+    width:100%;
+}
+
+.kontener_slajdow {
+    position: relative;
+}
+
+.text-on-image{
+
+    margin-top:-70px;
+    margin-left: 20px;
+    color: white; 
+    font-size: 54px; 
+    text-align:left; 
+     font-family: 'Kalnia', serif; 
+    background-color: rgba(0, 0, 0, 0.5);
+    max-width: 800px;
+    padding: 10px 50px;
+    white-space: nowrap;
+    position: absolute;
+    right: 0;
+    bottom: 0px;
+    /*    bottom: 125px;*/
+    z-index: 1;
+    border-radius: 3px ;
+}
+
+section {
+    display: flex;
+}
+
+.artykuly {
+    flex: 75%;
+    margin: 2% 0% 0% 2%;
+    background-color:rgba(117, 166, 164, 0.7);
+    text-align: justify;
+    border-radius: 3px ;
+
+
+}
+
+#ramka{
+    margin: 30px 30px 30px 30px ;
+    padding:  5px 30px 10px 30px;
+    border: 1px solid white;
+}
+.Czytaj_wiecej {
+    padding: 5px 10px;
+    display: block;
+    border: 2px solid black;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+    background: rgb(104, 145, 140);
+    transition: 0.4s;
+    margin-top: -10px;
+    float: right;
+    /*
+    margin-top: -20px;
+    margin-right: 20px;
+    text-decoration: none;
+*/
+}
+
+.Czytaj_wiecej:hover {
+    background: royalblue;
+    transition: 0.4s;
+}
+
+h1 {
+    font-family: 'Kalnia', serif;
+    text-align: center;
+}
+
+.art2,
+.art3 {
+    margin-top: 5%;
+    font-family: 'Kalnia', serif;
+}
+
+.sidebar {
+    position: relative;
+    flex:15%;
+    margin: 2% 2% 0% 30px;
+    /* background-color: #8fcdcf; */
+    border-radius: 3px ;
+
+}
+
+.zdjecie-sidebar{
+    object-fit: cover; 
+    border-radius: 3px ;
+    margin-right: 30px;
+    height: 100%; 
+}
+
+footer {
+    margin: 40px 0px 0px 0px;
+    text-align: center;
+    background-color: rgba(236, 226, 211, 0.589);
+    padding: 30px 10px;
+    color: grey;
+}
+
+#facebook{
+    text-decoration: none;
+}
+
+
+
+ @media screen and (max-width: 1156px) {
+    .menu li:not(:first-child) {
+        display: none;
+    }
+
+    .menu li:first-child {
+        display: inline-block;
+        margin-right: 0;
+    }
+}
+    @media screen and (max-width: 800px) {
+        .menu {
+            flex-direction: column;
+            
+        }
+
+        .menu li {
+            margin: 10px 0;
+        }
+
+        .menu ul {
+            position: static;
+            display: none;
+        }
+
+        .menu li:hover ul {
+            display: none;
+        }
+    } 
+
+
+
+ @media screen and (max-width: 1000px)
+{
+.text-on-image {
+    display: none;
+}
+.sidebar{
+    display: none;
+}
+} 
+
+
+    
