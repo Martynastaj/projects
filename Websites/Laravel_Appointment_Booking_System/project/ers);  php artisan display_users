@@ -1,0 +1,38 @@
+[90m= [39m[34;4mIlluminate\Database\Eloquent\Collection[39;24m {#6233
+    [34mall[39m: [
+      [34;4mApp\Models\User[39;24m {#6234
+        [34mid[39m: [35m1[39m,
+        [34mname[39m: "[32mJohn Doe[39m",
+        [34memail[39m: "[32mjohn.doe@gmail.com[39m",
+        [34memail_verified_at[39m: [36mnull[39m,
+        #[33mpassword[39m: "[32m$2y$12$6US2qiu2FIMOd/RMPTng3.waSMpDZ/YBBblHyWYzt1NzMUL3an.AS[39m",
+        [34mrole[39m: "[32mclient[39m",
+        #[33mremember_token[39m: [36mnull[39m,
+        [34mcreated_at[39m: [36mnull[39m,
+        [34mupdated_at[39m: [36mnull[39m,
+      },
+      [34;4mApp\Models\User[39;24m {#6235
+        [34mid[39m: [35m2[39m,
+        [34mname[39m: "[32mmm[39m",
+        [34memail[39m: "[32mm@wp.pl[39m",
+        [34memail_verified_at[39m: [36mnull[39m,
+        #[33mpassword[39m: "[32m$2y$12$9Ybz93LygmRbyQ7bNLDVj.1VUctO4YVq26Uxffx2h.tTClGZcxhmG[39m",
+        [34mrole[39m: "[32mclient[39m",
+        #[33mremember_token[39m: [36mnull[39m,
+        [34mcreated_at[39m: "[32m2024-12-17 12:45:42[39m",
+        [34mupdated_at[39m: "[32m2024-12-17 12:45:42[39m",
+      },
+      [34;4mApp\Models\User[39;24m {#6236
+        [34mid[39m: [35m3[39m,
+        [34mname[39m: "[32mmmm[39m",
+        [34memail[39m: "[32mmm@wp.pl[39m",
+        [34memail_verified_at[39m: [36mnull[39m,
+        #[33mpassword[39m: "[32m$2y$12$7hoY3dkKsr1dgM0USGs9veWXGfn7gHNNty1NtmnV1Fpvuph0FsFyy[39m",
+        [34mrole[39m: "[32mprovider[39m",
+        #[33mremember_token[39m: [36mnull[39m,
+        [34mcreated_at[39m: "[32m2024-12-17 12:59:53[39m",
+        [34mupdated_at[39m: "[32m2024-12-17 12:59:53[39m",
+      },
+    ],
+  }
+
